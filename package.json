@@ -1,0 +1,41 @@
+{
+  "name": "grunt-contrib-requirejs",
+  "description": "Optimize RequireJS projects using r.js.",
+  "version": "0.2.0",
+  "homepage": "https://github.com/gruntjs/grunt-contrib-requirejs",
+  "author": {
+    "name": "Tyler Kellen",
+    "url": "http://goingslowly.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gruntjs/grunt-contrib-requirejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gruntjs/grunt-contrib-requirejs/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/gruntjs/grunt-contrib-requirejs/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "requirejs": "~2.0.6",
+    "grunt-contrib-lib": "~0.2.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.15",
+    "grunt-contrib-clean": "~0.2.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
