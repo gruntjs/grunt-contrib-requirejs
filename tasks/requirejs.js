@@ -13,10 +13,6 @@ module.exports = function(grunt) {
   // TODO: ditch this when grunt v0.4 is released
   grunt.util = grunt.util || grunt.utils;
 
-  var _ = grunt.util._;
-  var kindOf = grunt.util.kindOf;
-  var helpers = require('grunt-contrib-lib').init(grunt);
-
   var requirejs = require('requirejs');
 
   // TODO: extend this to send build log to grunt.log.ok / grunt.log.error
@@ -33,6 +29,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerMultiTask('requirejs', 'Build a RequireJS project.', function() {
+
+    var _ = grunt.util._;
+    var kindOf = grunt.util.kindOf;
+    var helpers = require('grunt-contrib-lib').init(grunt);
     var options = helpers.options(this, {logLevel: 0});
 
     _.each(options, function(value, key) {
