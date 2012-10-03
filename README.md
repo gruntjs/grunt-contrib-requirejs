@@ -42,11 +42,6 @@ requirejs: {
 }
 ```
 
-## Release History
-
-* 2012/09/23 - v0.3.0 - Options no longer accepted from global config key.
-* 2012/09/10 - v0.2.0 - Refactored from grunt-contrib into individual repo.
-
 --
 
-Task submitted by [Tyler Kellen](https://github.com/tkellen).
+*Task submitted by [Tyler Kellen](http://goingslowly.com/).*
