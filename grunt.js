@@ -4,7 +4,6 @@
  *
  * Copyright (c) 2012 Tyler Kellen, contributors
  * Licensed under the MIT license.
- * https://github.com/gruntjs/grunt-contrib-requirejs/blob/master/LICENSE-MIT
  */
 
 module.exports = function(grunt) {
