@@ -33,6 +33,7 @@ module.exports = function(grunt) {
     var kindOf = grunt.util.kindOf;
     var helpers = require('grunt-contrib-lib').init(grunt);
     var options = helpers.options(this, {logLevel: 0});
+    var done = this.async();
 
     _.each(options, function(value, key) {
       if (kindOf(value) === 'string') {
@@ -42,6 +43,8 @@ module.exports = function(grunt) {
 
     grunt.verbose.writeflags(options, 'Options');
 
-    requirejs.optimize(options);
+    requirejs.optimize(options, function(response) {
+      done();
+    });
   });
 };
