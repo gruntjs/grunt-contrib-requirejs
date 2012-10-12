@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 
     var _ = grunt.util._;
     var kindOf = grunt.util.kindOf;
-    var helpers = require('grunt-contrib-lib').init(grunt);
+    var helpers = require('grunt-lib-contrib').init(grunt);
     var options = helpers.options(this, {logLevel: 0});
     var done = this.async();
 
