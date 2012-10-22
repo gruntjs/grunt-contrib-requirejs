@@ -32,11 +32,8 @@
     "grunt-lib-contrib": "~0.3.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "0.1.0",
-    "grunt-contrib-nodeunit": "0.1.0",
-    "grunt-contrib-clean": "0.4.0a",
-    "grunt-contrib-internal": "*",
-    "grunt": "~0.4.0a"
+    "grunt": "~0.3.15",
+    "grunt-contrib-clean": "~0.3.0"
   },
   "keywords": [
     "gruntplugin"
