@@ -17,28 +17,14 @@ npm install grunt-contrib-requirejs --save-dev
 ## Requirejs task
 _Run this task with the `grunt requirejs` command._
 
-### Overview
+_This task is a [multi task][] so any targets, files and options should be specified according to the [multi task][] documentation._
+[multi task]: https://github.com/gruntjs/grunt/wiki/Configuring-tasks
 
-In your project's Gruntfile, add a section named `requirejs` to the data object passed into `grunt.initConfig()`.
 
-```js
-grunt.initConfig({
-  requirejs: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-})
-```
-
-Options are passed to the [RequireJS Optimizer](http://requirejs.org/docs/optimization.html).
 ### Options
 
 For a full list of possible options, [see the r.js example build file](https://github.com/jrburke/r.js/blob/master/build/example.build.js).
-### Examples
+### Usage Examples
 
 ```js
 requirejs: {
@@ -52,6 +38,7 @@ requirejs: {
 }
 ```
 
+
 ## Release History
 
  * 2012-10-11   v0.3.3   Rename grunt-contrib-lib dep to grunt-lib-contrib.
@@ -63,4 +50,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Mon Nov 19 2012 16:03:32.*
+*This file was generated on Wed Nov 28 2012 08:45:11.*
