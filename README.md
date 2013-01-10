@@ -21,6 +21,8 @@ _This task is a [multi task][] so any targets, files and options should be speci
 [multi task]: https://github.com/gruntjs/grunt/wiki/Configuring-tasks
 
 
+_Version `0.4.x` of this plugin is compatible with Grunt `0.4.x`. Version `0.3.x` of this plugin is compatible with Grunt `0.3.x`._
+
 ### Options
 
 For a full list of possible options, [see the r.js example build file](https://github.com/jrburke/r.js/blob/master/build/example.build.js).
@@ -41,6 +43,7 @@ requirejs: {
 
 ## Release History
 
+ * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
  * 2012-10-11   v0.3.3   Rename grunt-contrib-lib dep to grunt-lib-contrib.
  * 2012-10-08   v0.3.1   Bump to RequireJS 2.1.x. Run optimizer async.
  * 2012-09-22   v0.3.0   Options no longer accepted from global config key.
@@ -50,4 +53,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Wed Nov 28 2012 08:45:11.*
+*This file was generated on Wed Jan 09 2013 20:18:12.*
