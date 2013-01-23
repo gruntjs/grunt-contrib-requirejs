@@ -43,6 +43,7 @@ requirejs: {
 
 ## Release History
 
+ * 2013-01-22   v0.4.0rc7   Updating to work with grunt v0.4.0rc7.
  * 2013-01-08   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
  * 2012-10-11   v0.3.3   Rename grunt-contrib-lib dep to grunt-lib-contrib.
  * 2012-10-08   v0.3.1   Bump to RequireJS 2.1.x. Run optimizer async.
@@ -53,4 +54,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Wed Jan 09 2013 20:18:12.*
+*This file was generated on Wed Jan 23 2013 12:08:19.*
