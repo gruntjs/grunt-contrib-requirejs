@@ -11,7 +11,7 @@ npm install grunt-contrib-requirejs --save-dev
 ```
 
 [grunt]: http://gruntjs.com/
-[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
+[Getting Started]: http://gruntjs.com/getting-started
 
 
 ## Requirejs task
@@ -54,4 +54,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Wed Jan 23 2013 12:08:19.*
+*This file was generated on Tue Feb 05 2013 12:42:14.*
