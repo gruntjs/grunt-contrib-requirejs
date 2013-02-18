@@ -28,8 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "requirejs": "~2.1.0",
-    "grunt-lib-contrib": "~0.3.0"
+    "requirejs": "~2.1.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
