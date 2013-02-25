@@ -43,6 +43,14 @@ module.exports = function(grunt) {
           name: 'project',
           out: 'tmp/requirejs-template.js'
         }
+      },
+      profile: {
+        options: {
+          name: 'project',
+          buildProfile: {
+            path: 'test/fixtures/buildProfile.js'
+          }
+        }
       }
     },
 
