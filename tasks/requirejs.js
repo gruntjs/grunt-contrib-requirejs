@@ -45,14 +45,6 @@ module.exports = function(grunt) {
       paths[key] = resolve(join(options.baseUrl, path));
     });
 
-    // if no out-file is provided, use the target name
-    var out = options.out || this.target;
-
-    // if trailing ".js" is missing on the outFile, append it
-    if(!(/\.js$/.test(out))) {
-      out = out + '.js';
-    }
-
     // make the out-file path absolute too
     options.out = resolve(join(options.baseUrl, options.out));
 
