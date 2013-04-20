@@ -7,9 +7,15 @@
  */
 
 module.exports = function(grunt) {
+
   'use strict';
 
   var requirejs = require('requirejs');
+  var path = require('path');
+
+  var resolve = path.resolve;
+  var join = path.join;
+  var _ = grunt.util._;
 
   // TODO: extend this to send build log to grunt.log.ok / grunt.log.error
   // by overriding the r.js logger (or submit issue to r.js to expand logging support)
@@ -28,8 +34,20 @@ module.exports = function(grunt) {
 
     var done = this.async();
     var options = this.options({
-      logLevel: 0
+      'logLevel': 0,
+      'paths': {},
+      'baseUrl': ''
     });
+
+    // make paths absolute, to be able to include files outside the base directory
+    var paths = options.paths = options.paths || {};
+    _.each(paths, function (path, key) {
+      paths[key] = resolve(join(options.baseUrl, path));
+    });
+
+    // make the out-file path absolute too
+    options.out = resolve(join(options.baseUrl, options.out));
+
     grunt.verbose.writeflags(options, 'Options');
 
     requirejs.optimize(options, function(response) {

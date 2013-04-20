@@ -34,14 +34,14 @@ module.exports = function(grunt) {
         options: {
           baseUrl: 'test/fixtures',
           name: 'project',
-          out: 'tmp/requirejs.js'
+          out: '../../tmp/requirejs.js'
         }
       },
       template: {
         options: {
           baseUrl: 'test/fixtures',
           name: 'project',
-          out: 'tmp/requirejs-template.js'
+          out: '../../tmp/requirejs-template.js'
         }
       }
     },
