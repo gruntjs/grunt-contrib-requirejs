@@ -43,6 +43,17 @@ module.exports = function(grunt) {
           name: 'project',
           out: 'tmp/requirejs-template.js'
         }
+      },
+      onOptimize: {
+        options: {
+          baseUrl: 'test/fixtures',
+          name: 'project',
+          out: 'tmp/requirejs-onoptimize.js',
+          onOptimize: function(done, build) {
+            grunt.file.write('tmp/onoptimize-build.txt', build);
+            done();
+          }
+        }
       }
     },
 
