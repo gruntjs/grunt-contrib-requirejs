@@ -29,7 +29,7 @@ exports['requirejs'] = {
     test.done();
   },
 
-  onOptimize: function(test) {
+  done: function(test) {
     'use strict';
 
     var expect, result;
@@ -37,8 +37,8 @@ exports['requirejs'] = {
     test.expect(1);
     
     expect = 7;
-    result = grunt.file.read('tmp/onoptimize-build.txt').split(require('os').EOL).length;
-    test.equal(expect, result, 'should provide an onoptimize hook with the output');
+    result = grunt.file.read('tmp/done-build.txt').split(require('os').EOL).length;
+    test.equal(expect, result, 'should provide a done hook with the output');
     
 
     test.done();

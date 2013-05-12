@@ -49,8 +49,8 @@ module.exports = function(grunt) {
           baseUrl: 'test/fixtures',
           name: 'project',
           out: 'tmp/requirejs-onoptimize.js',
-          onOptimize: function(done, build) {
-            grunt.file.write('tmp/onoptimize-build.txt', build);
+          done: function(done, build) {
+            grunt.file.write('tmp/done-build.txt', build);
             done();
           }
         }

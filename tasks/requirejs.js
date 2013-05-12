@@ -29,12 +29,12 @@ module.exports = function(grunt) {
     var done = this.async();
     var options = this.options({
       logLevel: 0,
-      onOptimize: function(done, response){
+      done: function(done, response){
         done();
       }
     });
     grunt.verbose.writeflags(options, 'Options');
 
-    requirejs.optimize(options, options.onOptimize.bind(null, done));
+    requirejs.optimize(options, options.done.bind(null, done));
   });
 };
