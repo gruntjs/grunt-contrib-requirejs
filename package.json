@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-requirejs",
   "description": "Optimize RequireJS projects using r.js.",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "homepage": "https://github.com/gruntjs/grunt-contrib-requirejs",
   "author": {
     "name": "Grunt Team",

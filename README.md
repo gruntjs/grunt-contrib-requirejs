@@ -77,6 +77,7 @@ requirejs: {
 
 ## Release History
 
+ * 2013-05-16   v0.4.1   Add 'done' option.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-23   v0.4.0rc7   Updating to work with grunt v0.4.0rc7.
  * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
@@ -89,4 +90,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Sun May 12 2013 15:34:28.*
+*This file was generated on Thu May 16 2013 16:08:33.*
