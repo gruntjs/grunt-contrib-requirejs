@@ -62,9 +62,9 @@ requirejs: {
         var duplicates = require('rjs-build-analysis').duplicates(output);
         
         if (duplicates.length > 0) {
-          grunt.log.subhead('Duplicates found in requirejs build:')
+          grunt.log.subhead('Duplicates found in requirejs build:');
           grunt.log.warn(duplicates);
-          done(new Error('r.js built duplicate modules, please check the excludes option.');
+          done(new Error('r.js built duplicate modules, please check the excludes option.'));
         }
         
         done();
@@ -90,4 +90,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Thu May 16 2013 16:08:33.*
+*This file was generated on Wed Jun 05 2013 17:35:19.*
