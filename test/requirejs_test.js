@@ -42,5 +42,24 @@ exports['requirejs'] = {
     
 
     test.done();
+  },
+
+  gruntFile: function(test) {
+    'use strict';
+
+    var expect, result;
+
+    test.expect(2);
+
+    expect = 'define("hello",[],function(){return"hello"}),define("world",[],function(){return"world"}),require(["hello","world"],function(e,t){console.log(e,t)}),define("project",function(){});';
+
+    result = grunt.file.read('tmp/requirejs-gruntfile.js');
+    test.equal(expect, result, 'should optimize javascript modules with requireJS');
+
+    result = grunt.file.read('tmp/requirejs-gruntfile2.js');
+    test.equal(expect, result, 'should optimize javascript modules with requireJS');
+
+    test.done();
+
   }
 };
