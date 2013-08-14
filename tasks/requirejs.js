@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       while (options.almond.html.dest[i] === options.out[i]) {
         i++;
       }
-      var relativeScriptLocaiton = options.out.slice(i);
+      var relativeScriptLocaiton = options.almond.scriptSrc || options.out.slice(i);
 
       grunt.file.write(options.almond.html.dest, htmlSections[0] + '<script src="' + relativeScriptLocaiton + '"></script>' + htmlSections[2]);
     }
