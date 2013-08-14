@@ -54,6 +54,20 @@ module.exports = function(grunt) {
             done();
           }
         }
+      },
+      almond: {
+        options: {
+          baseUrl: 'test/fixtures',
+          name: 'project',
+          out: 'tmp/requirejs-almond.js',
+          almond: {
+            almondFile: 'vendor/almond',
+            html: {
+              src: 'test/fixtures/index.html',
+              dest: 'tmp/index.html'
+            }
+          }
+        }
       }
     },
 
