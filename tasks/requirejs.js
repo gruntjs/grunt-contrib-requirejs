@@ -35,6 +35,24 @@ module.exports = function(grunt) {
     });
     grunt.verbose.writeflags(options, 'Options');
 
+    if (options.almond) {
+      options.insertRequire = [options.name];
+      options.include       = [options.name];
+      options.name          = options.almond.almondFile;
+
+      var htmlSource   = grunt.file.read(options.almond.html.src);
+      var htmlSections = htmlSource.split('<!-- almond -->');
+
+      // Determine the relative location of the generated script by removing the folders that the paths have in common
+      var i = 0;
+      while (options.almond.html.dest[i] === options.out[i]) {
+        i++;
+      }
+      var relativeScriptLocaiton = options.out.slice(i);
+
+      grunt.file.write(options.almond.html.dest, htmlSections[0] + '<script src="' + relativeScriptLocaiton + '"></script>' + htmlSections[2]);
+    }
+
     requirejs.optimize(options, options.done.bind(null, done));
   });
 };
