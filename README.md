@@ -31,7 +31,7 @@ Task targets and options may be specified according to the grunt [Configuring ta
 
 For a full list of possible options, [see the r.js example build file](https://github.com/jrburke/r.js/blob/master/build/example.build.js).
 
-###### almond
+##### almond
 
 The almond option allows you to easily configure an [almond](https://github.com/jrburke/almond) build. Here is a sample config which assumes that the almond.js library file is located at `dev/scripts/libs/almond.js`:
 
@@ -54,7 +54,7 @@ requirejs: {
 }
 ```
 
-The almond option has three required properties: 
+The almond option has three required properties and one optional property: 
 
 ###### almond.almondFile
 Type: `String`
@@ -78,6 +78,11 @@ Location to write the html file which contains a reference to the optimized scri
 ```html
 <script src="scripts/main-optimized.js"></script>
 ```
+
+###### almond.scriptSrc
+Type: `String`
+
+By default, the `src` attribute of the generated script tag will point at the location of the optimized file relative to the `dest` html location as seen in the above html snippet. However, you might want to change the value to point at a CDN or some other asset folder on your server, so with this option you can explicitly set the script tag's `src` attribute.
 
 #### done(done, build)
 
@@ -138,4 +143,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Tue Aug 13 2013 23:23:50.*
+*This file was generated on Wed Aug 14 2013 20:26:26.*
