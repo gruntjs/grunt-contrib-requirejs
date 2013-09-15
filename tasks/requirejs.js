@@ -31,10 +31,13 @@ module.exports = function(grunt) {
       logLevel: 0,
       done: function(done, response){
         done();
+      },
+      fail: function(done, err){
+        done(err);
       }
     });
     grunt.verbose.writeflags(options, 'Options');
 
-    requirejs.optimize(options, options.done.bind(null, done));
+    requirejs.optimize(options, options.done.bind(null, done), options.fail.bind(null,done));
   });
 };
