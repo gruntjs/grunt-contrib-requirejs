@@ -33,7 +33,6 @@ module.exports = function(grunt) {
         done();
       }
     });
-    grunt.verbose.writeflags(options, 'Options');
 
     requirejs.optimize(options, options.done.bind(null, done));
   });
