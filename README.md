@@ -1,4 +1,4 @@
-# grunt-contrib-requirejs [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
+# grunt-contrib-requirejs v0.4.1 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
 
 > Optimize RequireJS projects using r.js.
 
@@ -44,6 +44,7 @@ requirejs: {
     options: {
       baseUrl: "path/to/base",
       mainConfigFile: "path/to/config.js",
+      name: "path/to/almond", // assumes a production build using almond
       out: "path/to/optimized.js"
     }
   }
@@ -60,13 +61,13 @@ requirejs: {
       mainConfigFile: "path/to/config.js",
       done: function(done, output) {
         var duplicates = require('rjs-build-analysis').duplicates(output);
-        
+
         if (duplicates.length > 0) {
           grunt.log.subhead('Duplicates found in requirejs build:');
           grunt.log.warn(duplicates);
           done(new Error('r.js built duplicate modules, please check the excludes option.'));
         }
-        
+
         done();
       }
     }
@@ -90,4 +91,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Wed Jun 05 2013 17:35:19.*
+*This file was generated on Thu Jan 02 2014 11:07:24.*
