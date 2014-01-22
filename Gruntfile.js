@@ -54,6 +54,15 @@ module.exports = function(grunt) {
             done();
           }
         }
+      },
+      gruntFile: {
+        files :{
+        'tmp/requirejs-gruntfile.js' : ['test/fixtures/project.js'],
+        'tmp/requirejs-gruntfile2.js' : ['test/fixtures/project.js'],
+        },
+        options : {
+          baseUrl : 'test/fixtures'
+        }
       }
     },
 
