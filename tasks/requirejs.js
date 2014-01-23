@@ -80,7 +80,5 @@ module.exports = function(grunt) {
 
       }, options.done.bind(null, done));
     }
-
-    requirejs.optimize(options, options.done.bind(null, done));
   });
 };
