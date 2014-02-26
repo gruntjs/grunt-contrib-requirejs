@@ -1,4 +1,4 @@
-# grunt-contrib-requirejs v0.4.2 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
+# grunt-contrib-requirejs v0.4.3 [![Build Status](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
 
 > Optimize RequireJS projects using r.js.
 
@@ -78,6 +78,7 @@ requirejs: {
 
 ## Release History
 
+ * 2014-02-26   v0.4.3   Remove "Gruntfile.js" as package.json main.
  * 2014-02-26   v0.4.2   Catch exceptions in `done`.
  * 2013-05-16   v0.4.1   Add 'done' option.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
@@ -92,4 +93,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Wed Feb 26 2014 13:22:30.*
+*This file was generated on Wed Feb 26 2014 15:46:25.*

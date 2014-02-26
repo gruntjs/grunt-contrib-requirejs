@@ -1,3 +1,7 @@
+v0.4.3:
+  date: 2014-02-26
+  changes:
+    - Remove "Gruntfile.js" as package.json main.
 v0.4.2:
   date: 2014-02-26
   changes:
