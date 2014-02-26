@@ -33,7 +33,15 @@ module.exports = function(grunt) {
         done();
       }
     });
+    // The following catches errors in the user-defined `done` function and outputs them.
+    var tryCatch = function(fn, done, output) {
+      try {
+        fn(done, output);
+      } catch(e) {
+        grunt.fail.warn('There was an error while processing your done function: "' + e + '"');
+      }
+    };
 
-    requirejs.optimize(options, options.done.bind(null, done));
+    requirejs.optimize(options, tryCatch.bind(null, options.done, done));
   });
 };
