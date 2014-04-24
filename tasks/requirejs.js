@@ -10,6 +10,7 @@ module.exports = function(grunt) {
   'use strict';
 
   var requirejs = require('requirejs');
+  var LOG_LEVEL_TRACE = 0, LOG_LEVEL_WARN = 2;
 
   // TODO: extend this to send build log to grunt.log.ok / grunt.log.error
   // by overriding the r.js logger (or submit issue to r.js to expand logging support)
@@ -28,7 +29,7 @@ module.exports = function(grunt) {
 
     var done = this.async();
     var options = this.options({
-      logLevel: 0,
+      logLevel: grunt.option('verbose') ? LOG_LEVEL_TRACE : LOG_LEVEL_WARN,
       done: function(done, response){
         done();
       }
