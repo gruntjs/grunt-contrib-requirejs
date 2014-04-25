@@ -1,3 +1,7 @@
+v0.4.4:
+  date: 2014-04-25
+  changes:
+    - Reduce logging verbosity unless --verbose flag is used.
 v0.4.3:
   date: 2014-02-26
   changes:
