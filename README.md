@@ -72,8 +72,9 @@ requirejs: {
           } else {
             grunt.log.success("No duplicates found!");
           }
-          done();
         }
+
+        done();
       }
     }
   }
