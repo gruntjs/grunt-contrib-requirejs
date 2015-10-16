@@ -1,11 +1,11 @@
-# grunt-contrib-requirejs v0.4.4 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.png?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
+# grunt-contrib-requirejs v0.4.4 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
 
-> Optimize RequireJS projects using r.js.
+> Optimize RequireJS projects using r.js
 
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -63,14 +63,10 @@ requirejs: {
       done: function(done, output) {
         var duplicates = require('rjs-build-analysis').duplicates(output);
 
-        if (Object.keys(duplicates).length > 0) {
+        if (duplicates.length > 0) {
           grunt.log.subhead('Duplicates found in requirejs build:');
-          for (var key in duplicates) {
-            grunt.log.error(duplicates[key] + ": " + key);
-          }
+          grunt.log.warn(duplicates);
           return done(new Error('r.js built duplicate modules, please check the excludes option.'));
-        } else {
-          grunt.log.success("No duplicates found!");
         }
 
         done();
@@ -99,4 +95,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Fri Apr 25 2014 15:35:54.*
+*This file was generated on Fri Oct 16 2015 19:10:09.*
