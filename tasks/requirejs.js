@@ -30,7 +30,7 @@ module.exports = function(grunt) {
     var done = this.async();
     var options = this.options({
       logLevel: grunt.option('verbose') ? LOG_LEVEL_TRACE : LOG_LEVEL_WARN,
-      done: function(done, response){
+      done: function(done){
         done();
       }
     });
