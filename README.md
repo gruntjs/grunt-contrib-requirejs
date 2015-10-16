@@ -44,7 +44,8 @@ requirejs: {
     options: {
       baseUrl: "path/to/base",
       mainConfigFile: "path/to/config.js",
-      name: "path/to/almond", // assumes a production build using almond
+      name: "path/to/almond", /* assumes a production build using almond, if you don't use almond, you 
+                                 need to set the "includes" or "modules" option instead of name */
       out: "path/to/optimized.js"
     }
   }
