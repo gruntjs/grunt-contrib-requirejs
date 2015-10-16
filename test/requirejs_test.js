@@ -1,9 +1,9 @@
+'use strict';
+
 var grunt = require('grunt');
 
 exports['requirejs'] = {
   main: function(test) {
-    'use strict';
-
     var expect, result;
 
     test.expect(1);
@@ -16,8 +16,6 @@ exports['requirejs'] = {
   },
 
   template: function(test) {
-    'use strict';
-
     var expect, result;
 
     test.expect(1);
@@ -30,8 +28,6 @@ exports['requirejs'] = {
   },
 
   done: function(test) {
-    'use strict';
-
     var expect, result;
 
     test.expect(1);
