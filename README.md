@@ -46,6 +46,7 @@ requirejs: {
       mainConfigFile: "path/to/config.js",
       name: "path/to/almond", /* assumes a production build using almond, if you don't use almond, you 
                                  need to set the "includes" or "modules" option instead of name */
+      include: [ "src/main.js" ],
       out: "path/to/optimized.js"
     }
   }
