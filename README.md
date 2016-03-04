@@ -1,4 +1,4 @@
-# grunt-contrib-requirejs v0.4.4 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
+# grunt-contrib-requirejs v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
 
 > Optimize RequireJS projects using r.js
 
@@ -96,6 +96,7 @@ requirejs: {
 
 ## Release History
 
+ * 2016-03-04   v1.0.0   Update usage example to show a working usage. Remove peerDep and point to main task. rjs-build-analysis returns an object not an array. Made clear that usage of almond is not required. added error option to handle r.js errors.
  * 2014-04-25   v0.4.4   Reduce logging verbosity unless --verbose flag is used.
  * 2014-02-26   v0.4.3   Remove "Gruntfile.js" as package.json main.
  * 2014-02-26   v0.4.2   Catch exceptions in `done`.
@@ -112,4 +113,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Fri Mar 04 2016 16:11:32.*
+*This file was generated on Fri Mar 04 2016 16:13:43.*

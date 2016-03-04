@@ -1,3 +1,11 @@
+v1.0.0:
+  date: 2016-03-04
+  changes:
+    - Update usage example to show a working usage.
+    - Remove peerDep and point to main task.
+    - rjs-build-analysis returns an object not an array.
+    - Made clear that usage of almond is not required.
+    - added error option to handle r.js errors.
 v0.4.4:
   date: 2014-04-25
   changes:
