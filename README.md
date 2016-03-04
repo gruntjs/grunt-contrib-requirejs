@@ -5,7 +5,6 @@
 
 
 ## Getting Started
-This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -95,7 +94,6 @@ requirejs: {
 ```
 
 
-
 ## Release History
 
  * 2014-04-25   v0.4.4   Reduce logging verbosity unless --verbose flag is used.
@@ -114,4 +112,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Fri Oct 16 2015 19:10:09.*
+*This file was generated on Fri Mar 04 2016 16:11:32.*
