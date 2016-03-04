@@ -30,12 +30,13 @@ module.exports = function(grunt) {
     var done = this.async();
     var options = this.options({
       logLevel: grunt.option('verbose') ? LOG_LEVEL_TRACE : LOG_LEVEL_WARN,
+      error: false,
       done: function(done){
         done();
       }
     });
     // The following catches errors in the user-defined `done` function and outputs them.
-    var tryCatch = function(fn, done, output) {
+    var tryCatchDone = function(fn, done, output) {
       try {
         fn(done, output);
       } catch(e) {
@@ -43,6 +44,21 @@ module.exports = function(grunt) {
       }
     };
 
-    requirejs.optimize(options, tryCatch.bind(null, options.done, done));
+    // The following catches errors in the user-defined `error` function and passes them.
+    // if the error function options is not set, this value should be undefined
+    var tryCatchError = function(fn, done, err) {
+      try {
+        fn(done, err);
+      } catch(e) {
+        grunt.fail.fatal('There was an error while processing your error function: "' + e + '"');
+      }
+    };
+
+    requirejs.optimize(
+            options,
+            tryCatchDone.bind(null, options.done, done ),
+            options.error ? tryCatchError.bind(null, options.error, done ):undefined
+    );
+
   });
 };
