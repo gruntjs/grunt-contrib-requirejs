@@ -1,4 +1,4 @@
-# grunt-contrib-requirejs v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs)
+# grunt-contrib-requirejs v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-requirejs.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-requirejs) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ithfwohrb4u06rx3/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-requirejs/branch/master)
 
 > Optimize RequireJS projects using r.js
 
@@ -113,4 +113,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Fri Mar 04 2016 16:13:43.*
+*This file was generated on Thu Mar 17 2016 19:45:40.*
