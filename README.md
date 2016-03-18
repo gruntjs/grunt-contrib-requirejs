@@ -96,11 +96,11 @@ requirejs: {
 
 ## Release History
 
- * 2016-03-04   v1.0.0   Update usage example to show a working usage. Remove peerDep and point to main task. rjs-build-analysis returns an object not an array. Made clear that usage of almond is not required. added error option to handle r.js errors.
- * 2014-04-25   v0.4.4   Reduce logging verbosity unless --verbose flag is used.
+ * 2016-03-04   v1.0.0   Update usage example to show a working usage. Remove peerDep and point to main task. rjs-build-analysis returns an object not an array. Made clear that usage of almond is not required. Added error option to handle r.js errors.
+ * 2014-04-25   v0.4.4   Reduce logging verbosity unless `--verbose` flag is used.
  * 2014-02-26   v0.4.3   Remove "Gruntfile.js" as package.json main.
  * 2014-02-26   v0.4.2   Catch exceptions in `done`.
- * 2013-05-16   v0.4.1   Add 'done' option.
+ * 2013-05-16   v0.4.1   Add `done` option.
  * 2013-02-15   v0.4.0   First official release for Grunt 0.4.0.
  * 2013-01-23   v0.4.0rc7   Updating to work with grunt v0.4.0rc7.
  * 2013-01-09   v0.4.0rc5   Updating to work with grunt v0.4.0rc5.
@@ -113,4 +113,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Thu Mar 17 2016 19:45:40.*
+*This file was generated on Fri Mar 18 2016 19:07:31.*

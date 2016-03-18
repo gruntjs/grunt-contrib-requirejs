@@ -5,11 +5,11 @@ v1.0.0:
     - Remove peerDep and point to main task.
     - rjs-build-analysis returns an object not an array.
     - Made clear that usage of almond is not required.
-    - added error option to handle r.js errors.
+    - Added error option to handle r.js errors.
 v0.4.4:
   date: 2014-04-25
   changes:
-    - Reduce logging verbosity unless --verbose flag is used.
+    - Reduce logging verbosity unless `--verbose` flag is used.
 v0.4.3:
   date: 2014-02-26
   changes:
@@ -21,7 +21,7 @@ v0.4.2:
 v0.4.1:
   date: 2013-05-16
   changes:
-    - Add 'done' option.
+    - Add `done` option.
 v0.4.0:
   date: 2013-02-15
   changes:
