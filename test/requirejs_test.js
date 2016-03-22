@@ -1,7 +1,6 @@
 'use strict';
 
 var grunt = require('grunt');
-var os = require('os');
 
 exports['requirejs'] = {
   main: function(test) {
@@ -34,7 +33,7 @@ exports['requirejs'] = {
     test.expect(1);
 
     expect = 7;
-    result = grunt.file.read('tmp/done-build.txt').split(os.EOL).length;
+    result = grunt.file.read('tmp/done-build.txt').split('\n').length;
     test.equal(expect, result, 'should provide a done hook with the output');
 
     test.done();
