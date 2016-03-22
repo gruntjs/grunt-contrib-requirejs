@@ -16,7 +16,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "requirejs": "^2.1.0"
+    "requirejs": "^2.2.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
