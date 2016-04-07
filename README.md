@@ -41,12 +41,12 @@ The done option is an optional hook to receive the r.js build output. The first 
 requirejs: {
   compile: {
     options: {
-      baseUrl: "path/to/base",
-      mainConfigFile: "path/to/config.js",
-      name: "path/to/almond", /* assumes a production build using almond, if you don't use almond, you
+      baseUrl: 'path/to/base',
+      mainConfigFile: 'path/to/config.js',
+      name: 'path/to/almond', /* assumes a production build using almond, if you don't use almond, you
                                  need to set the "includes" or "modules" option instead of name */
-      include: [ "src/main.js" ],
-      out: "path/to/optimized.js"
+      include: [ 'src/main.js' ],
+      out: 'path/to/optimized.js'
     }
   }
 }
@@ -58,8 +58,8 @@ requirejs: {
 requirejs: {
   compile: {
     options: {
-      baseUrl: "path/to/base",
-      mainConfigFile: "path/to/config.js",
+      baseUrl: 'path/to/base',
+      mainConfigFile: 'path/to/config.js',
       done: function(done, output) {
         var duplicates = require('rjs-build-analysis').duplicates(output);
 
@@ -82,8 +82,8 @@ requirejs: {
 requirejs: {
   compile: {
     options: {
-      baseUrl: "path/to/base",
-      mainConfigFile: "path/to/config.js",
+      baseUrl: 'path/to/base',
+      mainConfigFile: 'path/to/config.js',
       error: function(done, err) {
         grunt.log.warn(err);
         done();
@@ -113,4 +113,4 @@ requirejs: {
 
 Task submitted by [Tyler Kellen](http://goingslowly.com/)
 
-*This file was generated on Fri Mar 18 2016 19:07:31.*
+*This file was generated on Thu Apr 07 2016 15:25:57.*
