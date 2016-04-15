@@ -6,8 +6,9 @@
  * Licensed under the MIT license.
  */
 
+'use strict';
+
 module.exports = function(grunt) {
-  'use strict';
 
   var requirejs = require('requirejs');
   var LOG_LEVEL_TRACE = 0, LOG_LEVEL_WARN = 2;
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
     var options = this.options({
       logLevel: grunt.option('verbose') ? LOG_LEVEL_TRACE : LOG_LEVEL_WARN,
       error: false,
-      done: function(done){
+      done: function(done) {
         done();
       }
     });
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
     var tryCatchDone = function(fn, done, output) {
       try {
         fn(done, output);
-      } catch(e) {
+      } catch (e) {
         grunt.fail.warn('There was an error while processing your done function: "' + e + '"');
       }
     };
@@ -49,15 +50,15 @@ module.exports = function(grunt) {
     var tryCatchError = function(fn, done, err) {
       try {
         fn(done, err);
-      } catch(e) {
+      } catch (e) {
         grunt.fail.fatal('There was an error while processing your error function: "' + e + '"');
       }
     };
 
     requirejs.optimize(
             options,
-            tryCatchDone.bind(null, options.done, done ),
-            options.error ? tryCatchError.bind(null, options.error, done ):undefined
+            tryCatchDone.bind(null, options.done, done),
+            options.error ? tryCatchError.bind(null, options.error, done):undefined
     );
 
   });

@@ -2,7 +2,7 @@
 
 var grunt = require('grunt');
 
-exports['requirejs'] = {
+exports.requirejs = {
   main: function(test) {
     var expect, result;
 
