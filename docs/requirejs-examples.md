@@ -55,3 +55,19 @@ requirejs: {
   }
 }
 ```
+
+#### Requirejs
+
+```js
+requirejs: {
+  compile: {
+    options: {
+      requirejs: require('@my/requirejs'),
+      baseUrl: 'path/to/base',
+      mainConfigFile: 'path/to/config.js',
+      include: [ 'src/main.js' ],
+      out: 'path/to/optimized.js'
+    }
+  }
+}
+```
