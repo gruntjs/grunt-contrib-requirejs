@@ -2,7 +2,7 @@
  * grunt-contrib-requirejs
  * http://gruntjs.com/
  *
- * Copyright (c) 2016 Tyler Kellen, contributors
+ * Copyright (c) 2012-2016 Tyler Kellen, contributors
  * Licensed under the MIT license.
  */
 
@@ -41,7 +41,8 @@ module.exports = function(grunt) {
         options: {
           baseUrl: 'test/fixtures',
           name: 'project',
-          out: 'tmp/requirejs-template.js'
+          out: 'tmp/requirejs-template.js',
+          verbose: true
         }
       },
       onOptimize: {
@@ -53,6 +54,44 @@ module.exports = function(grunt) {
             grunt.file.write('tmp/done-build.txt', build);
             done();
           }
+        }
+      },
+      'custom-requirejs': {
+        options: {
+          requirejs: require('requirejs'),
+          baseUrl: 'test/fixtures',
+          name: 'project',
+          out: 'tmp/custom-requirejs.js'
+        }
+      },
+      'build-failure': {
+        options: {
+          baseUrl: 'test/failure',
+          name: 'project',
+          out: 'tmp/build-failure.js',
+          force: true
+        }
+      },
+      'done-failure': {
+        options: {
+          baseUrl: 'test/fixtures',
+          name: 'project',
+          out: 'tmp/done-failure.js',
+          done: function() {
+            throw new Error('in done');
+          },
+          force: true
+        }
+      },
+      'error-failure': {
+        options: {
+          baseUrl: 'test/failure',
+          name: 'project',
+          out: 'tmp/error-failure.js',
+          error: function() {
+            throw new Error('in error');
+          },
+          force: true
         }
       }
     },
